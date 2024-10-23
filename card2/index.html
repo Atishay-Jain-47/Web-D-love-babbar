@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: aliceblue;
+            height: 83%;
+            width: 25%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            /* padding: 10px;
+            margin: 10px; */
+            align-items: center;
+            gap: 20px;
+            padding: px;
+            box-shadow: 1px 1px 15px black;
+        }
+
+
+
+        .card img {
+            width: 99.95%;
+            height: 40%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: rgb(201, 224, 245);
+            width: 90%;
+            justify-content: space-between;
+            border-radius: 5px;
+            align-items: center;
+            padding-right: 5px;
+        }
+
+        .box1 a {
+            transition-duration: 0.1s;
+            transition-property: all;
+            transition-timing-function: linear;
+        }
+
+        .box1 a:hover {
+            transform: scale(1.03);
+        }
+
+        .box1 img {
+            height: 30px;
+            width: 30px;
+            padding-left: 3px;
+        }
+
+        .box2 p {
+            font-size: small;
+        }
+
+        button {
+            width: 90%;
+            height: 9%;
+            background-color: rgb(30, 30, 150);
+            color: aliceblue;
+            font-size: large;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px black;
+            transition-duration: 0.1s;
+            transition-property: all;
+            transition-timing-function: linear;
+
+        }
+
+        button:hover {
+            transform: scale(1.03);
+        }
+
+        #anchor1 {
+            text-decoration: none;
+            color: rgb(29, 28, 28);
+            font-size: medium;
+            transition-duration: 0.1s;
+            transition-property: all;
+            transition-timing-function: linear;
+        }
+
+        #anchor1:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <img src="3d-illustration-global-online-internet-network-concept_31965-12094.avif">
+
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, omnis! Itaque fugit ratione, et aut
+                quaerat ab commodi quas a.</p>
+
+            <div class="box1">
+                <img src="OIP.jpeg">
+                <div class="box2">
+                    <p>Annual Plan</p>
+                    <p>$99.9/year</p>
+                </div>
+                <a href="#">Change</a>
+            </div>
+
+            <button>Proceed to Payment</button>
+            <a href="#" id="anchor1">Cancel Order</a>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

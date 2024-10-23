@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="post">
+        <h2>Job Application</h2>
+
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email">
+        <br>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone">
+        <br>
+        <br>
+
+        <span>Resume:</span>
+        <input type="file" id="resume">
+        <br>
+        <br>
+
+        <label for="experience">Experience(Years):</label>
+        <br>
+        <input type="number" name="counter" id="experience" min="0" max="50">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id="js">
+            <label for="js">JavaScript</label>
+            <br>
+            <br>
+
+        </fieldset>
+        <br>
+        <select name="highest education" id="highest education">
+            <option value="high school">High School</option>
+            <option value="higher secondary school">Higher Secondary School</option>
+            <option value="graduation">Graduation</option>
+            <option value="masters">Masters</option>
+        </select>
+        <br>
+        <br>
+
+        Availability:
+        <br>
+        <input type="radio" name="availability" id="full time" value="full time">
+        <label for="full time">Full-Time</label>
+        <br>
+
+        <input type="radio" name="availability" id="part time" value="part time">
+        <label for="part time">Part-Time</label>
+        <br>
+        <br>
+
+        <label for="comment">Additional Comments:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+
+        <BUtton>Submit</BUtton>
+    </form>
+
+
+
+</body>
+
+</html>

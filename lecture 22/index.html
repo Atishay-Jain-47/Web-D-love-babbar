@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: brown;
+            
+        }
+
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            --custom-width: 330px;
+
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: var(--custom-width);
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            margin: 5px;
+
+            /* box-shadow: 10px 10px brown; */
+
+            /* box-shadow: 10px 10px 5px greenyellow; */
+
+            /* box-shadow: 10px 10px 0px 10px rgb(66, 240, 66); */
+
+            /* box-shadow: inset 10px 10px brown; */
+
+            box-shadow: 10px 10px brown, 15px 15px blueviolet;
+        }
+
+        #head1 {
+            /* text-shadow: 2px 2px rgb(139, 126, 136); */
+
+            text-shadow: 1px 1px red, 2px 2px blue, 3px 3px green;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 id="head1">Welcome TO CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus nam reprehenderit voluptas
+                possimus nulla maiores sed natus id? Dolore aut accusamus sit ab harum accusantium numquam, atque
+                repellendus ad nostrum magnam exercitationem sunt minus corrupti cum similique tempora architecto, animi
+                repudiandae dolorum. Laborum dolorum nesciunt quibusdam illo reiciendis amet?</p>
+        </div>
+    </div>
+</body>
+
+</html>

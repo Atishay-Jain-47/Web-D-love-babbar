@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --glow-color: hsl(186 100% 69%);
+          }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            background-color: black;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            
+        }
+
+        button{
+            height: 40px;
+            width: 120px;
+             background-color: var(--glow-color); 
+            color: rgb(31, 3, 13);
+            border: 2px solid var(--glow-color);
+            border-radius: 5px;
+            font-size: 18px;
+            box-shadow: 0 0 20px var(--glow-color);
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        
+        button::before{
+            content: "";
+            background-color: rgb(153, 48, 223);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.8s;
+        }
+        button:hover{
+            background-color: aqua;
+            box-shadow: 0 0 50px rgb(178, 87, 238);
+            transition: all 0.8s linear;
+        }
+        button:hover::before{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button">Click Here</button>
+       
+    </div>
+</body>
+</html>

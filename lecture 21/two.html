@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            width: 350px;
+            display: flex;
+            padding: 5px;
+            margin: 10px;
+        }
+        #boxleft{
+            background-color: aquamarine;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid blue;
+        }
+
+        #boxright{
+            background-color: yellow;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid brown;
+        }
+
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>Text 1</p>
+            <p>Text 2</p>
+        </div>
+
+        <div id="boxright">
+            <img src="bhagat singh2.webp" height="200px">
+        </div>
+    </div>
+</body>
+
+</html>
